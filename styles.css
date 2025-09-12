@@ -1,0 +1,161 @@
+/* Подключение готических шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #000; /* Полностью чёрный фон для header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 250px; /* Увеличенный размер логотипа */
+    height: auto;
+    padding: 10px; /* Отступ для гармонии */
+    border-radius: 5px; /* Опционально, для мягких краёв */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff6200; /* Оранжевый цвет ссылок для контраста */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Белый при наведении */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px; /* Отступ снизу для футера */
+}
+
+.section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: #ff6200;
+    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif; /* Готический шрифт */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section p strong {
+    color: #ff6200; /* Яркий цвет для видимости */
+    font-size: 1.2em;
+    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif; /* Готический шрифт */
+}
+
+.normal-text {
+    font-family: 'Arial', sans-serif; /* Нормальный шрифт */
+    color: #fff; /* Белый цвет */
+    font-weight: normal; /* Убираем жирность */
+}
+
+.partner-card {
+    background-color: #1a1a1a; /* Тёмный фон для карты партнёра */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner-logo {
+    max-width: 150px; /* Размер логотипа партнёра */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.partner-address {
+    font-size: 0.9em; /* Мелкий шрифт */
+    text-decoration: underline; /* Подчёркнутый адрес */
+    margin: 10px 0;
+}
+
+.partner-phone {
+    font-size: 0.9em; /* Мелкий шрифт */
+    margin: 10px 0;
+}
+
+.partner-discount {
+    font-size: 1.5em; /* Крупный шрифт для скидки */
+    text-decoration: underline; /* Подчёркнутая скидка */
+    color: #ff6200; /* Оранжевый для акцента */
+    margin-top: 10px;
+}
+
+.instagram-button {
+    display: inline-block;
+    background-color: #ff6200; /* Оранжевый фон кнопки */
+    color: #fff; /* Белый текст */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.instagram-button:hover {
+    background-color: #fff; /* Белый фон при наведении */
+    color: #ff6200; /* Оранжевый текст */
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        max-width: 180px; /* Уменьшен для мобильных */
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .partner-card {
+        max-width: 100%; /* Полная ширина на мобильных */
+    }
+}
