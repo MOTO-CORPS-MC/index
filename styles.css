@@ -1,25 +1,22 @@
-/* Подключение готических шрифтов */
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat;
     background-color: #000;
     color: #fff;
 }
 
 header {
-    background-color: #000; /* Полностью чёрный фон для header */
+    background-color: #000;
     padding: 20px;
     text-align: center;
 }
 
 .logo {
-    max-width: 250px; /* Увеличенный размер логотипа */
+    max-width: 250px;
     height: auto;
-    padding: 10px; /* Отступ для гармонии */
-    border-radius: 5px; /* Опционально, для мягких краёв */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -34,21 +31,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ff6200; /* Оранжевый цвет ссылок для контраста */
+    color: #ff6200;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
+    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif;
 }
 
 nav ul li a:hover {
-    color: #fff; /* Белый при наведении */
+    color: #fff;
 }
 
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 60px; /* Отступ снизу для футера */
+    padding-bottom: 60px;
 }
 
 .section {
@@ -57,7 +55,7 @@ main {
 
 section h2 {
     color: #ff6200;
-    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif; /* Готический шрифт */
+    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -68,19 +66,19 @@ section p {
 }
 
 section p strong {
-    color: #ff6200; /* Яркий цвет для видимости */
+    color: #ff6200;
     font-size: 1.2em;
-    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif; /* Готический шрифт */
+    font-family: 'UnifrakturCook', 'MedievalSharp', 'Arial', sans-serif;
 }
 
 .normal-text {
-    font-family: 'Arial', sans-serif; /* Нормальный шрифт */
-    color: #fff; /* Белый цвет */
-    font-weight: normal; /* Убираем жирность */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-weight: normal;
 }
 
 .partner-card {
-    background-color: #1a1a1a; /* Тёмный фон для карты партнёра */
+    background-color: #1a1a2a;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -88,36 +86,43 @@ section p strong {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s, background-color 0.3s;
+    opacity: 0;
+}
+
+.partner-card:hover {
+    transform: scale(1.05);
+    background-color: #2a2a2a;
 }
 
 .partner-logo {
-    max-width: 150px; /* Размер логотипа партнёра */
+    max-width: 150px;
     height: auto;
     margin-bottom: 15px;
 }
 
 .partner-address {
-    font-size: 0.9em; /* Мелкий шрифт */
-    text-decoration: underline; /* Подчёркнутый адрес */
+    font-size: 0.9em;
+    text-decoration: underline;
     margin: 10px 0;
 }
 
 .partner-phone {
-    font-size: 0.9em; /* Мелкий шрифт */
+    font-size: 0.9em;
     margin: 10px 0;
 }
 
 .partner-discount {
-    font-size: 1.5em; /* Крупный шрифт для скидки */
-    text-decoration: underline; /* Подчёркнутая скидка */
-    color: #ff6200; /* Оранжевый для акцента */
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: #ff6200;
     margin-top: 10px;
 }
 
 .instagram-button {
     display: inline-block;
-    background-color: #ff6200; /* Оранжевый фон кнопки */
-    color: #fff; /* Белый текст */
+    background-color: #ff6200;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -126,18 +131,63 @@ section p strong {
 }
 
 .instagram-button:hover {
-    background-color: #fff; /* Белый фон при наведении */
-    color: #ff6200; /* Оранжевый текст */
+    background-color: #fff;
+    color: #ff6200;
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: #1a1a2a;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 5px;
     width: 100%;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    /* Убрано position: fixed для естественного размещения внизу */
+}
+
+.social-links-container {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    color: #ff6200;
+}
+
+.social-links-container a {
+    color: #ff6200;
+    margin: 0 10px;
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-container a:hover {
+    color: #fff;
+}
+
+.social-links-container a img {
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+}
+
+.instagram-icon {
+    vertical-align: middle;
+}
+
+.city-link {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Анимация появления карточек */
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Адаптивность для мобильных */
@@ -148,7 +198,7 @@ footer {
     }
 
     .logo {
-        max-width: 180px; /* Уменьшен для мобильных */
+        max-width: 180px;
     }
 
     section h2 {
@@ -156,6 +206,13 @@ footer {
     }
 
     .partner-card {
-        max-width: 100%; /* Полная ширина на мобильных */
+        max-width: 100%;
+    }
+
+    .partner-address, .partner-phone {
+        font-size: 1em;
     }
 }
+
+/* Плейсхолдер для иконок */
+.icon-phone::before { content: "📞"; }
