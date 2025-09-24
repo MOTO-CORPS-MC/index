@@ -78,7 +78,7 @@ section p strong {
 }
 
 .partner-card {
-    background-color: #1a1a2a;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -146,7 +146,7 @@ footer {
 
 .social-links-container {
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-bottom: 10px;
     color: #ff6200;
 }
